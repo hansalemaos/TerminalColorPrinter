@@ -3,7 +3,7 @@ class TC:
         print(f"{TC('sfsf').fg_green.bg_orange.bold}{TC('sfsfsfds').fg_orange}")"""
 
     def __init__(self, text):
-        self.text = text
+        self.text = str(text)
         self.c_reset = "\033[0m"
         self.c_bold = "\033[1m"
         self.c_underline = "\033[4m"
