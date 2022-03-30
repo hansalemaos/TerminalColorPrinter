@@ -35,119 +35,119 @@ class TC:
 
     @property
     def bold(self):
-        self.text = self.c_bold + self.text
+        self.text = f'{self.c_bold}{self.text}'
         return self
     @property
     def underline(self):
-        self.text = self.c_underline + self.text
+        self.text = f'{self.c_underline}{self.text}'
         return self
     @property
     def reverse(self):
-        self.text = self.c_reverse + self.text
+        self.text = f'{self.c_reverse}{self.text}'
         return self
     @property
     def strikethrough(self):
-        self.text = self.c_strikethrough + self.text
+        self.text = f'{self.c_strikethrough}{self.text}'
         return self
     @property
     def invisible(self):
-        self.text = self.c_invisible + self.text
+        self.text = f'{self.c_invisible}{self.text}'
         return self
     @property
     def fg_black(self):
-        self.text = self.c_fg_black + self.text
+        self.text = f'{self.c_fg_black}{self.text}'
         return self
     @property
     def fg_red(self):
-        self.text = self.c_fg_red + self.text
+        self.text = f'{self.c_fg_red}{self.text}'
         return self
     @property
     def fg_green(self):
-        self.text = self.c_fg_green + self.text
+        self.text = f'{self.c_fg_green}{self.text}'
         return self
     @property
     def fg_orange(self):
-        self.text = self.c_fg_orange + self.text
+        self.text = f'{self.c_fg_orange}{self.text}'
         return self
     @property
     def fg_blue(self):
-        self.text = self.c_fg_blue + self.text
+        self.text = f'{self.c_fg_blue}{self.text}'
         return self
     @property
     def fg_purple(self):
-        self.text = self.c_fg_purple + self.text
+        self.text = f'{self.c_fg_purple}{self.text}'
         return self
     @property
     def fg_cyan(self):
-        self.text = self.c_fg_cyan + self.text
+        self.text = f'{self.c_fg_cyan}{self.text}'
         return self
     @property
     def fg_lightgrey(self):
-        self.text = self.c_fg_lightgrey + self.text
+        self.text = f'{self.c_fg_lightgrey}{self.text}'
         return self
     @property
     def fg_darkgrey(self):
-        self.text = self.c_fg_darkgrey + self.text
+        self.text = f'{self.c_fg_darkgrey}{self.text}'
         return self
     @property
     def fg_lightred(self):
-        self.text = self.c_fg_lightred + self.text
+        self.text = f'{self.c_fg_lightred}{self.text}'
         return self
     @property
     def fg_lightgreen(self):
-        self.text = self.c_fg_lightgreen + self.text
+        self.text = f'{self.c_fg_lightgreen}{self.text}'
         return self
     @property
     def fg_yellow(self):
-        self.text = self.c_fg_yellow + self.text
+        self.text = f'{self.c_fg_yellow}{self.text}'
         return self
     @property
     def fg_lightblue(self):
-        self.text = self.c_fg_lightblue + self.text
+        self.text = f'{self.c_fg_lightblue}{self.text}'
         return self
     @property
     def fg_pink(self):
-        self.text = self.c_fg_pink + self.text
+        self.text = f'{self.c_fg_pink}{self.text}'
         return self
     @property
     def fg_lightcyan(self):
-        self.text = self.c_fg_lightcyan + self.text
+        self.text = f'{self.c_fg_lightcyan}{self.text}'
         return self
     @property
     def bg_black(self):
-        self.text = self.c_bg_black + self.text
+        self.text = f'{self.c_bg_black}{self.text}'
         return self
     @property
     def bg_red(self):
-        self.text = self.c_bg_red + self.text
+        self.text = f'{self.c_bg_red}{self.text}'
         return self
     @property
     def bg_green(self):
-        self.text = self.c_bg_green + self.text
+        self.text = f'{self.c_bg_green}{self.text}'
         return self
     @property
     def bg_orange(self):
-        self.text = self.c_bg_orange + self.text
+        self.text = f'{self.c_bg_orange}{self.text}'
         return self
     @property
     def bg_blue(self):
-        self.text = self.c_bg_blue + self.text
+        self.text = f'{self.c_bg_blue}{self.text}'
         return self
     @property
     def bg_purple(self):
-        self.text = self.c_bg_purple + self.text
+        self.text = f'{self.c_bg_purple}{self.text}'
         return self
     @property
     def bg_cyan(self):
-        self.text = self.c_bg_cyan + self.text
+        self.text = f'{self.c_bg_cyan}{self.text}'
         return self
     @property
     def bg_lightgrey(self):
-        self.text = self.c_bg_lightgrey + self.text
+        self.text = f'{self.c_bg_lightgrey}{self.text}'
         return self
 
     def __str__(self):
-        self.text = self.text + self.c_reset
+        self.text = f'{self.text}{self.c_reset}'
         return self.text
 
 #print(f"{TC('sfsf').fg_green.bg_orange} xxxx {TC('sfsfsfds').bold.fg_black.strikethrough.underline.bg_red}")
